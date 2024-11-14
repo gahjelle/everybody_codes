@@ -21,6 +21,7 @@ class Puzzle:
             1: "The Battle for the Farmlands",
             2: "The Runes of Power",
             3: "Mining Maestro",
+            4: "Royal Smith's Puzzle",
         }}
         return titles[self.year][self.day]
 

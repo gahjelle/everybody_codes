@@ -17,20 +17,23 @@ def parse_data(puzzle_input):
 
 def part1(puzzle_input):
     """Solve part 1."""
-    coords = parse_data(puzzle_input)
-    return count_blocks(coords, neighbors_4)
+    return solve(puzzle_input, neighbors_4)
 
 
 def part2(puzzle_input):
     """Solve part 2."""
-    coords = parse_data(puzzle_input)
-    return count_blocks(coords, neighbors_4)
+    return part1(puzzle_input)
 
 
 def part3(puzzle_input):
     """Solve part 3."""
+    return solve(puzzle_input, neighbors_8)
+
+
+def solve(puzzle_input, neighbors):
+    """Solve the puzzle for the given number of neighbors"""
     coords = parse_data(puzzle_input)
-    return count_blocks(coords, neighbors_8)
+    return count_blocks(coords, neighbors)
 
 
 def count_blocks(coords, neighbors):
