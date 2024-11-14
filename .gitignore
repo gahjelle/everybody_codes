@@ -8,6 +8,7 @@ Makefile
 timings.*.md
 stats.md
 
+ec_template.*
 README.template
 join_ec_files.py
 download_input.py

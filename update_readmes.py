@@ -20,6 +20,7 @@ class Puzzle:
         titles = {2024: {
             1: "The Battle for the Farmlands",
             2: "The Runes of Power",
+            3: "Mining Maestro",
         }}
         return titles[self.year][self.day]
 

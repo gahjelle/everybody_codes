@@ -2,15 +2,15 @@
 
 My attempts at solving the excellent puzzles at [everybody.codes](http://everybody.codes/) in different languages:
 
-- 🐍 [Python](python/) (6 🦆)
+- 🐍 [Python](python/) (9 🦆)
 
-All my solutions (6 🦆):
+All my solutions (9 🦆):
 
 |   Day | 2024                                                                         |
 |------:|:-----------------------------------------------------------------------------|
 |     1 | [🐍](python/2024_the_kingdom_of_algorithmia/01_the_battle_for_the_farmlands) |
 |     2 | [🐍](python/2024_the_kingdom_of_algorithmia/02_the_runes_of_power)           |
-|     3 |                                                                              |
+|     3 | [🐍](python/2024_the_kingdom_of_algorithmia/03_mining_maestro)               |
 |     4 |                                                                              |
 |     5 |                                                                              |
 |     6 |                                                                              |

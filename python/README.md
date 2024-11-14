@@ -1,12 +1,12 @@
 # Everybody Codes in Python
 
-Solutions to [Everybody Codes](https://everybody.codes/) in [Python](https://www.python.org/) (6🦆):
+Solutions to [Everybody Codes](https://everybody.codes/) in [Python](https://www.python.org/) (9🦆):
 
 |   Day | [2024](2024_the_kingdom_of_algorithmia)                                   |
 |------:|:--------------------------------------------------------------------------|
 |     1 | [🦆🦆🦆](2024_the_kingdom_of_algorithmia/01_the_battle_for_the_farmlands) |
 |     2 | [🦆🦆🦆](2024_the_kingdom_of_algorithmia/02_the_runes_of_power)           |
-|     3 |                                                                           |
+|     3 | [🦆🦆🦆](2024_the_kingdom_of_algorithmia/03_mining_maestro)               |
 |     4 |                                                                           |
 |     5 |                                                                           |
 |     6 |                                                                           |
