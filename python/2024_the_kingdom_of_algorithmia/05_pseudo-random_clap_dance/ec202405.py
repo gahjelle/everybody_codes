@@ -1,0 +1,91 @@
+"""Everybody Codes 5, 2024: Pseudo-Random Clap Dance"""
+
+# Standard library imports
+import collections
+import itertools
+import sys
+from pathlib import Path
+
+NUM_COLUMNS = 4
+
+
+def parse_columns(puzzle_input):
+    """Parse puzzle input into columns."""
+    return [
+        list(column)
+        for column in zip(
+            *[
+                [int(person) for person in line.split()]
+                for line in puzzle_input.split("\n")
+            ]
+        )
+    ]
+
+
+def part1(puzzle_input):
+    """Solve part 1."""
+    columns = parse_columns(puzzle_input)
+    for clapper in range(10):
+        columns = dance(columns, clapper % NUM_COLUMNS)
+
+    return int("".join(str(column[0]) for column in columns))
+
+
+def part2(puzzle_input):
+    """Solve part 2."""
+    columns = parse_columns(puzzle_input)
+
+    shouts = collections.defaultdict(int)
+    for round in itertools.count(start=1):
+        columns = dance(columns, (round - 1) % NUM_COLUMNS)
+        round_shout = "".join(str(column[0]) for column in columns)
+        shouts[round_shout] += 1
+        if shouts[round_shout] == 2024:
+            return round * int(round_shout)
+
+
+def part3(puzzle_input):
+    """Solve part 3."""
+    columns = parse_columns(puzzle_input)
+    shouts = set()
+    seen_columns = set()
+
+    for round in itertools.count(start=1):
+        columns = dance(columns, (round - 1) % NUM_COLUMNS)
+        shouts.add("".join(str(column[0]) for column in columns))
+        columns_hash = (round % 4,) + tuple(tuple(column) for column in columns)
+        if columns_hash in seen_columns:
+            return int(max(shouts))
+        seen_columns.add(columns_hash)
+
+
+def dance(columns, clapper_col):
+    clapper, *prev_col = columns[clapper_col]
+    next_col = columns[(clapper_col + 1) % NUM_COLUMNS]
+    num_moves = abs((clapper % (len(next_col) * 2)) - 1)
+    new_idx = num_moves if num_moves <= len(next_col) else 2 * len(next_col) - num_moves
+
+    if clapper_col == NUM_COLUMNS - 1:
+        return (
+            [next_col[:new_idx] + [clapper] + next_col[new_idx:]]
+            + columns[1:clapper_col]
+            + [prev_col]
+        )
+    else:
+        return (
+            columns[:clapper_col]
+            + [prev_col]
+            + [next_col[:new_idx] + [clapper] + next_col[new_idx:]]
+            + columns[clapper_col + 2 :]
+        )
+
+
+if __name__ == "__main__":
+    for paths in zip(sys.argv[1::3], sys.argv[2::3], sys.argv[3::3]):
+        puzzle_inputs = [Path(path).read_text().rstrip() for path in paths]
+        print(f"\n{", ".join(paths)}:")
+        solutions = [
+            part(puzzle_input)
+            for part, puzzle_input in zip([part1, part2, part3], puzzle_inputs)
+        ]
+        print("\n".join(str(solution) for solution in solutions))
