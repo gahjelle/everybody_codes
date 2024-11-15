@@ -23,6 +23,7 @@ class Puzzle:
             3: "Mining Maestro",
             4: "Royal Smith's Puzzle",
             5: "Pseudo-Random Clap Dance",
+            9: "Sparkling Bugs",
         }}
         return titles[self.year][self.day]
 
