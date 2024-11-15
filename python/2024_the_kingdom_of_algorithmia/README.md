@@ -9,3 +9,18 @@ Solutions to [Everybody Codes 2024](https://everybody.codes/event/2024/) in [Pyt
 | 3    | Mining Maestro               | [ec202403.py](03_mining_maestro/ec202403.py)               | 174.62 μs ⚪️ |   2.42 ms 🔵 |  14.03 ms 🔵 | 16.62 ms 🔵 |
 | 4    | Royal Smith's Puzzle         | [ec202404.py](04_royal_smiths_puzzle/ec202404.py)          |   7.59 μs ⚪️ |  34.67 μs ⚪️ |   3.33 ms 🔵 |  3.38 ms 🔵 |
 | 5    | Pseudo-Random Clap Dance     | [ec202405.py](05_pseudo-random_clap_dance/ec202405.py)     |  38.82 μs ⚪️ |    4.47 s 🔴 | 377.53 ms 🔵 |   4.85 s 🔴 |
+| 6    |                              |                                                            |             |             |             |            |
+| 7    |                              |                                                            |             |             |             |            |
+| 8    |                              |                                                            |             |             |             |            |
+| 9    | Sparkling Bugs               | [ec202409.py](09_sparkling_bugs/ec202409.py)               |  64.38 ms 🔵 |  23.45 ms 🔵 |    2.28 s 🔴 |   2.37 s 🔴 |
+| 10   |                              |                                                            |             |             |             |            |
+| 11   |                              |                                                            |             |             |             |            |
+| 12   |                              |                                                            |             |             |             |            |
+| 13   |                              |                                                            |             |             |             |            |
+| 14   |                              |                                                            |             |             |             |            |
+| 15   |                              |                                                            |             |             |             |            |
+| 16   |                              |                                                            |             |             |             |            |
+| 17   |                              |                                                            |             |             |             |            |
+| 18   |                              |                                                            |             |             |             |            |
+| 19   |                              |                                                            |             |             |             |            |
+| 20   |                              |                                                            |             |             |             |            |
