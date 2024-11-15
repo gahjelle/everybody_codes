@@ -23,6 +23,7 @@ class Puzzle:
             3: "Mining Maestro",
             4: "Royal Smith's Puzzle",
             5: "Pseudo-Random Clap Dance",
+            6: "The Tree of Titans",
             9: "Sparkling Bugs",
         }}
         return titles[self.year][self.day]
