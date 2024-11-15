@@ -2,9 +2,9 @@
 
 My attempts at solving the excellent puzzles at [everybody.codes](http://everybody.codes/) in different languages:
 
-- 🐍 [Python](python/) (18 🦆)
+- 🐍 [Python](python/) (21 🦆)
 
-All my solutions (18 🦆):
+All my solutions (21 🦆):
 
 |   Day | 2024                                                                         |
 |------:|:-----------------------------------------------------------------------------|
@@ -13,7 +13,7 @@ All my solutions (18 🦆):
 |     3 | [🐍](python/2024_the_kingdom_of_algorithmia/03_mining_maestro)               |
 |     4 | [🐍](python/2024_the_kingdom_of_algorithmia/04_royal_smiths_puzzle)          |
 |     5 | [🐍](python/2024_the_kingdom_of_algorithmia/05_pseudo-random_clap_dance)     |
-|     6 |                                                                              |
+|     6 | [🐍](python/2024_the_kingdom_of_algorithmia/06_the_tree_of_titans)           |
 |     7 |                                                                              |
 |     8 |                                                                              |
 |     9 | [🐍](python/2024_the_kingdom_of_algorithmia/09_sparkling_bugs)               |
