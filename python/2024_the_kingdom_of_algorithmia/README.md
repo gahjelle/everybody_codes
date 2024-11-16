@@ -13,7 +13,7 @@ Solutions to [Everybody Codes 2024](https://everybody.codes/event/2024/) in [Pyt
 | 7    |                              |                                                            |             |             |             |             |
 | 8    |                              |                                                            |             |             |             |             |
 | 9    | Sparkling Bugs               | [ec202409.py](09_sparkling_bugs/ec202409.py)               |  14.80 ms 🔵 |   3.28 ms 🔵 | 347.15 ms 🔵 | 365.23 ms 🔵 |
-| 10   |                              |                                                            |             |             |             |             |
+| 10   | Shrine Needs To Shine        | [ec202410.py](10_shrine_needs_to_shine/ec202410.py)        | 136.34 μs ⚪️ |   8.04 ms 🔵 |  23.72 ms 🔵 |  31.90 ms 🔵 |
 | 11   |                              |                                                            |             |             |             |             |
 | 12   |                              |                                                            |             |             |             |             |
 | 13   |                              |                                                            |             |             |             |             |
