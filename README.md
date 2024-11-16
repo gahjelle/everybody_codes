@@ -2,9 +2,9 @@
 
 My attempts at solving the excellent puzzles at [everybody.codes](http://everybody.codes/) in different languages:
 
-- 🐍 [Python](python/) (21 🦆)
+- 🐍 [Python](python/) (24 🦆)
 
-All my solutions (21 🦆):
+All my solutions (24 🦆):
 
 |   Day | 2024                                                                         |
 |------:|:-----------------------------------------------------------------------------|
@@ -17,7 +17,7 @@ All my solutions (21 🦆):
 |     7 |                                                                              |
 |     8 |                                                                              |
 |     9 | [🐍](python/2024_the_kingdom_of_algorithmia/09_sparkling_bugs)               |
-|    10 |                                                                              |
+|    10 | [🐍](python/2024_the_kingdom_of_algorithmia/10_shrine_needs_to_shine)        |
 |    11 |                                                                              |
 |    12 |                                                                              |
 |    13 |                                                                              |

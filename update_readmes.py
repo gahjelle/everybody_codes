@@ -25,6 +25,7 @@ class Puzzle:
             5: "Pseudo-Random Clap Dance",
             6: "The Tree of Titans",
             9: "Sparkling Bugs",
+            10: "Shrine Needs to Shine",
         }}
         return titles[self.year][self.day]
 
