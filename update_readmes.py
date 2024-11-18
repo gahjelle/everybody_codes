@@ -17,21 +17,24 @@ class Puzzle:
 
     @property
     def title(self):
-        titles = {2024: {
-            1: "The Battle for the Farmlands",
-            2: "The Runes of Power",
-            3: "Mining Maestro",
-            4: "Royal Smith's Puzzle",
-            5: "Pseudo-Random Clap Dance",
-            6: "The Tree of Titans",
-            9: "Sparkling Bugs",
-            10: "Shrine Needs to Shine",
-        }}
+        titles = {
+            2024: {
+                1: "The Battle for the Farmlands",
+                2: "The Runes of Power",
+                3: "Mining Maestro",
+                4: "Royal Smith's Puzzle",
+                5: "Pseudo-Random Clap Dance",
+                6: "The Tree of Titans",
+                9: "Sparkling Bugs",
+                10: "Shrine Needs to Shine",
+            }
+        }
         return titles[self.year][self.day]
 
     @property
     def url(self):
         return f"https://everybody.codes/event/{self.year}/quests/{self.day}"
+
 
 def _solutions(glob, pattern, path):
     """Identify solution files for different languages"""
@@ -73,9 +76,16 @@ HOMEPAGE = {
 SOLUTIONS = {
     "python": _solutions(
         "python/*/*/output.py.txt*",
-        parse.compile("{language}/{year:d}_{event}/{day:02d}_{name}/output.py.{_suffix}"),
+        parse.compile(
+            "{language}/{year:d}_{event}/{day:02d}_{name}/output.py.{_suffix}"
+        ),
         "python/{year}_{event}/{day:02d}_{name}/README.md",
-    )
+    ),
+    "elixir": _solutions(
+        "elixir/lib/*/*/output.ex.txt*",
+        parse.compile("{language}/lib/{year:d}/{day:02d}_{name}/output.ex.{_suffix}"),
+        "elixir/lib/{year}/{day:02d}_{name}/README.md",
+    ),
 }
 
 
