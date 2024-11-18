@@ -6,4 +6,4 @@ Puzzle text: <https://everybody.codes/event/2024/quests/3>
 
 Solutions in other languages:
 
-- [💧 Elixir](../../../elixir/lib/2024/03_mining_maestro)
+- [🐍 Python](../../../../python/2024_the_kingdom_of_algorithmia/03_mining_maestro)

@@ -23,7 +23,11 @@ defmodule Mix.Tasks.Solve do
       "Elixir.EverybodyCodes#{year}.Day#{String.pad_leading(day, 2, "0")}"
       |> String.to_existing_atom()
 
-    [path1, path2, path3] = files
-    ec_module.main(path1, path2, path3)
+    files
+    |> Enum.chunk_every(3)
+    |> Enum.map(fn files ->
+      [path1, path2, path3] = files
+      ec_module.main(path1, path2, path3)
+    end)
   end
 end
