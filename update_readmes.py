@@ -27,6 +27,7 @@ class Puzzle:
                 6: "The Tree of Titans",
                 9: "Sparkling Bugs",
                 10: "Shrine Needs to Shine",
+                11: "Biological Warfare",
             }
         }
         return titles[self.year][self.day]
