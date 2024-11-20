@@ -1,6 +1,6 @@
 # Everybody Codes in Elixir
 
-Solutions to [Everybody Codes](https://everybody.codes/) in [Elixir](https://elixir-lang.org/) (6🦆):
+Solutions to [Everybody Codes](https://everybody.codes/) in [Elixir](https://elixir-lang.org/) (9🦆):
 
 |   Day | [2024](lib/2024)                                   |
 |------:|:---------------------------------------------------|
@@ -14,7 +14,7 @@ Solutions to [Everybody Codes](https://everybody.codes/) in [Elixir](https://eli
 |     8 |                                                    |
 |     9 |                                                    |
 |    10 |                                                    |
-|    11 |                                                    |
+|    11 | [🦆🦆🦆](lib/2024/11_biological_warfare)           |
 |    12 |                                                    |
 |    13 |                                                    |
 |    14 |                                                    |

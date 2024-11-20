@@ -25,7 +25,6 @@ def parse(puzzle_input):
 def part1(puzzle_input):
     """Solve part 1."""
     conversions = parse(puzzle_input)
-    print(conversions)
     return calculate_population(conversions, initial="A", num_days=4)
 
 

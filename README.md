@@ -3,7 +3,7 @@
 My solutions to the excellent puzzles at [everybody.codes](http://everybody.codes/) in different languages:
 
 - 🐍 [Python](python/) (30 🦆)
-- 💧 [Elixir](elixir/) (6 🦆)
+- 💧 [Elixir](elixir/) (9 🦆)
 
 All my solutions (30 🦆):
 
@@ -19,7 +19,7 @@ All my solutions (30 🦆):
 |     8 |                                                                                                                                   |
 |     9 | [🐍](python/2024_the_kingdom_of_algorithmia/09_sparkling_bugs)                                                                    |
 |    10 | [🐍](python/2024_the_kingdom_of_algorithmia/10_shrine_needs_to_shine)                                                             |
-|    11 | [🐍](python/2024_the_kingdom_of_algorithmia/11_biological_warfare)                                                                |
+|    11 | [🐍](python/2024_the_kingdom_of_algorithmia/11_biological_warfare)[💧](elixir/lib/2024/11_biological_warfare)                     |
 |    12 | [🐍](python/2024_the_kingdom_of_algorithmia/12_desert_shower)                                                                     |
 |    13 |                                                                                                                                   |
 |    14 |                                                                                                                                   |
