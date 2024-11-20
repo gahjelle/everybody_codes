@@ -2,10 +2,10 @@
 
 My solutions to the excellent puzzles at [everybody.codes](http://everybody.codes/) in different languages:
 
-- 🐍 [Python](python/) (27 🦆)
+- 🐍 [Python](python/) (30 🦆)
 - 💧 [Elixir](elixir/) (6 🦆)
 
-All my solutions (27 🦆):
+All my solutions (30 🦆):
 
 |   Day | 2024                                                                                                                              |
 |------:|:----------------------------------------------------------------------------------------------------------------------------------|
@@ -20,7 +20,7 @@ All my solutions (27 🦆):
 |     9 | [🐍](python/2024_the_kingdom_of_algorithmia/09_sparkling_bugs)                                                                    |
 |    10 | [🐍](python/2024_the_kingdom_of_algorithmia/10_shrine_needs_to_shine)                                                             |
 |    11 | [🐍](python/2024_the_kingdom_of_algorithmia/11_biological_warfare)                                                                |
-|    12 |                                                                                                                                   |
+|    12 | [🐍](python/2024_the_kingdom_of_algorithmia/12_desert_shower)                                                                     |
 |    13 |                                                                                                                                   |
 |    14 |                                                                                                                                   |
 |    15 |                                                                                                                                   |

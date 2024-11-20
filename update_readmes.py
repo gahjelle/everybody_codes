@@ -28,6 +28,7 @@ class Puzzle:
                 9: "Sparkling Bugs",
                 10: "Shrine Needs to Shine",
                 11: "Biological Warfare",
+                12: "Desert Shower",
             }
         }
         return titles[self.year][self.day]
