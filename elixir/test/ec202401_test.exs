@@ -5,6 +5,7 @@ defmodule EverybodyCodes2024.Day01.Test do
   use ExUnit.Case, async: true
   require EverybodyCodes
   import EverybodyCodes2024.Day01, only: [part1: 1, part2: 1, part3: 1]
+  doctest(EverybodyCodes2024.Day01, import: true)
 
   @puzzle_dir "lib/2024/01_the_battle_for_the_farmlands/"
   setup_all do

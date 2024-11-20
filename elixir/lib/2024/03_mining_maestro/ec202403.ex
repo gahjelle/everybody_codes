@@ -28,6 +28,14 @@ defmodule EverybodyCodes2024.Day03 do
     puzzle_input |> parse_grid() |> count_blocks(@neighbors_diagonal)
   end
 
+  @doc """
+  Parse input into a mapset of coordinates
+
+  ## Example
+
+      iex> parse_grid("...#\\n#.##\\n##..")
+      MapSet.new([{0, 3}, {1, 0}, {1, 2}, {1, 3}, {2, 0}, {2, 1}])
+  """
   def parse_grid(grid) do
     for {line, row} <- grid |> String.split("\n", trim: true) |> Enum.with_index(),
         {char, col} <- line |> String.to_charlist() |> Enum.with_index(),
@@ -36,12 +44,34 @@ defmodule EverybodyCodes2024.Day03 do
         into: MapSet.new()
   end
 
+  @doc """
+  Count the number of blocks that can be dug out, based on the given neighbors
+
+  ## Example
+
+      iex> count_blocks(
+      ...>     MapSet.new([{0, 1}, {1, 0}, {1, 1}, {1, 2}, {2, 1}]),
+      ...>     [{-1, 0}, {0, -1}, {0, 1}, {1, 0}]
+      ...> )
+      6
+  """
   def count_blocks(grid, neighbors) do
     if Enum.empty?(grid),
       do: 0,
       else: Enum.count(grid) + count_blocks(grid |> shrink(neighbors), neighbors)
   end
 
+  @doc """
+  Shrink a grid to only include those blocks with neighbors on all sides
+
+  ## Example
+
+      iex> shrink(
+      ...>     MapSet.new([{0, 1}, {1, 0}, {1, 1}, {1, 2}, {2, 1}]),
+      ...>     [{-1, 0}, {0, -1}, {0, 1}, {1, 0}]
+      ...> )
+      MapSet.new([{1, 1}])
+  """
   def shrink(grid, neighbors) do
     grid
     |> Enum.filter(fn {row, col} ->
