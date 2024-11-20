@@ -24,10 +24,18 @@ def part3(puzzle_input):
 
 
 def calculate_potions(insects):
-    """Calculate number of potions needed to fight off all insects"""
+    """Calculate number of potions needed to fight off all insects
+
+    ## Example
+
+    >>> calculate_potions(["AB", "Dx", "xx", "CB", "AA"])  # 3 + 5 + 0 + 6 + 2
+    16
+    """
     return sum(
-        sum(POTIONS[insect] for insect in battle)
-        + ((num := sum([insect != "x" for insect in battle])) * (num - 1))
+        (
+            sum(POTIONS[insect] for insect in battle)
+            + (num := sum(insect != "x" for insect in battle)) * (num - 1)
+        )
         for battle in insects
     )
 
