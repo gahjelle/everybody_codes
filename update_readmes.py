@@ -29,6 +29,7 @@ class Puzzle:
                 10: "Shrine Needs to Shine",
                 11: "Biological Warfare",
                 12: "Desert Shower",
+                13: "Never Gonna Let You Down",
             }
         }
         return titles[self.year][self.day]
