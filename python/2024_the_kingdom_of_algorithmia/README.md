@@ -16,7 +16,7 @@ Solutions to [Everybody Codes 2024](https://everybody.codes/event/2024/) in [Pyt
 | 10   | Shrine Needs To Shine        | [ec202410.py](10_shrine_needs_to_shine/ec202410.py)        | 136.34 μs ⚪️ |   8.04 ms 🔵 |  23.72 ms 🔵 |  31.90 ms 🔵 |
 | 11   | Biological Warfare           | [ec202411.py](11_biological_warfare/ec202411.py)           |  90.84 μs ⚪️ | 247.26 μs ⚪️ | 182.78 ms 🔵 | 183.11 ms 🔵 |
 | 12   | Desert Shower                | [ec202412.py](12_desert_shower/ec202412.py)                | 106.20 μs ⚪️ |   1.20 ms 🔵 |   2.91 ms 🔵 |   4.21 ms 🔵 |
-| 13   | Never Gonna Let You Down     | [ec202413.py](13_never_gonna_let_you_down/ec202413.py)     |   4.88 ms 🔵 |  31.53 ms 🔵 |   17.63 s 🔴 |   17.67 s 🔴 |
+| 13   | Never Gonna Let You Down     | [ec202413.py](13_never_gonna_let_you_down/ec202413.py)     | 253.45 μs ⚪️ |   6.88 ms 🔵 |  75.13 ms 🔵 |  82.26 ms 🔵 |
 | 14   |                              |                                                            |             |             |             |             |
 | 15   |                              |                                                            |             |             |             |             |
 | 16   |                              |                                                            |             |             |             |             |
