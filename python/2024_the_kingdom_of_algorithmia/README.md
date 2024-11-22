@@ -8,7 +8,7 @@ Solutions to [Everybody Codes 2024](https://everybody.codes/event/2024/) in [Pyt
 | 2    | The Runes Of Power           | [ec202402.py](02_the_runes_of_power/ec202402.py)           |  11.02 μs ⚪️ |  10.28 ms 🔵 |  62.17 ms 🔵 |  72.47 ms 🔵 |
 | 3    | Mining Maestro               | [ec202403.py](03_mining_maestro/ec202403.py)               | 174.62 μs ⚪️ |   2.42 ms 🔵 |  14.03 ms 🔵 |  16.62 ms 🔵 |
 | 4    | Royal Smith's Puzzle         | [ec202404.py](04_royal_smiths_puzzle/ec202404.py)          |   7.59 μs ⚪️ |  34.67 μs ⚪️ |   3.33 ms 🔵 |   3.38 ms 🔵 |
-| 5    | Pseudo-Random Clap Dance     | [ec202405.py](05_pseudo-random_clap_dance/ec202405.py)     |  38.82 μs ⚪️ |    4.47 s 🔴 | 377.53 ms 🔵 |    4.85 s 🔴 |
+| 5    | Pseudo-Random Clap Dance     | [ec202405.py](05_pseudo-random_clap_dance/ec202405.py)     |  21.68 μs ⚪️ |    1.63 s 🔴 | 294.09 ms 🔵 |    1.93 s 🔴 |
 | 6    | The Tree Of Titans           | [ec202406.py](06_the_tree_of_titans/ec202406.py)           |  98.59 μs ⚪️ |   2.29 ms 🔵 |  15.70 ms 🔵 |  18.09 ms 🔵 |
 | 7    |                              |                                                            |             |             |             |             |
 | 8    |                              |                                                            |             |             |             |             |
@@ -17,8 +17,7 @@ Solutions to [Everybody Codes 2024](https://everybody.codes/event/2024/) in [Pyt
 | 11   | Biological Warfare           | [ec202411.py](11_biological_warfare/ec202411.py)           |  90.84 μs ⚪️ | 247.26 μs ⚪️ | 182.78 ms 🔵 | 183.11 ms 🔵 |
 | 12   | Desert Shower                | [ec202412.py](12_desert_shower/ec202412.py)                | 106.20 μs ⚪️ |   1.20 ms 🔵 |   2.91 ms 🔵 |   4.21 ms 🔵 |
 | 13   | Never Gonna Let You Down     | [ec202413.py](13_never_gonna_let_you_down/ec202413.py)     | 253.45 μs ⚪️ |   6.88 ms 🔵 |  75.13 ms 🔵 |  82.26 ms 🔵 |
-| 14   |                              |                                                            |             |             |             |             |
-| 15   |                              |                                                            |             |             |             |             |
+| 14   | The House Of Palms           | [ec202414.py](14_the_house_of_palms/ec202414.py)           | 103.74 μs ⚪️ |   5.72 ms 🔵 | 288.23 ms 🔵 | 294.05 ms 🔵 |  | 15 |  |  |  |  |  |  |
 | 16   |                              |                                                            |             |             |             |             |
 | 17   |                              |                                                            |             |             |             |             |
 | 18   |                              |                                                            |             |             |             |             |

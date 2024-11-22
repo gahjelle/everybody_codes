@@ -30,6 +30,7 @@ class Puzzle:
                 11: "Biological Warfare",
                 12: "Desert Shower",
                 13: "Never Gonna Let You Down",
+                14: "The House of Palms",
             }
         }
         return titles[self.year][self.day]
