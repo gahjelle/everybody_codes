@@ -8,7 +8,7 @@ Solutions to [Everybody Codes 2024](https://everybody.codes/event/2024/) in [Pyt
 | 2    | The Runes Of Power           | [ec202402.py](02_the_runes_of_power/ec202402.py)           |  11.02 μs ⚪️ |  10.28 ms 🔵 |  62.17 ms 🔵 |  72.47 ms 🔵 |
 | 3    | Mining Maestro               | [ec202403.py](03_mining_maestro/ec202403.py)               | 174.62 μs ⚪️ |   2.42 ms 🔵 |  14.03 ms 🔵 |  16.62 ms 🔵 |
 | 4    | Royal Smith's Puzzle         | [ec202404.py](04_royal_smiths_puzzle/ec202404.py)          |   7.59 μs ⚪️ |  34.67 μs ⚪️ |   3.33 ms 🔵 |   3.38 ms 🔵 |
-| 5    | Pseudo-Random Clap Dance     | [ec202405.py](05_pseudo-random_clap_dance/ec202405.py)     |  21.68 μs ⚪️ |    1.63 s 🔴 | 294.09 ms 🔵 |    1.93 s 🔴 |
+| 5    | Pseudo-Random Clap Dance     | [ec202405.py](05_pseudo-random_clap_dance/ec202405.py)     |  23.08 μs ⚪️ |    1.61 s 🔴 | 292.30 ms 🔵 |    1.90 s 🔴 |
 | 6    | The Tree Of Titans           | [ec202406.py](06_the_tree_of_titans/ec202406.py)           |  98.59 μs ⚪️ |   2.29 ms 🔵 |  15.70 ms 🔵 |  18.09 ms 🔵 |
 | 7    |                              |                                                            |             |             |             |             |
 | 8    |                              |                                                            |             |             |             |             |

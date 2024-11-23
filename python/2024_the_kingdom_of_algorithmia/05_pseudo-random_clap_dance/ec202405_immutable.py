@@ -25,33 +25,33 @@ def parse_columns(puzzle_input):
 def part1(puzzle_input):
     """Solve part 1."""
     columns = parse_columns(puzzle_input)
+    for clapper in range(10):
+        columns = shuffle(columns, clapper % NUM_COLUMNS)
 
-    for round in range(10):
-        shuffle(columns, round)
     return int("".join(str(column[0]) for column in columns))
 
 
-def part2(puzzle_input, target=2024):
+def part2(puzzle_input):
     """Solve part 2."""
     columns = parse_columns(puzzle_input)
 
-    num_shouts = collections.defaultdict(int)
-    for round in itertools.count():
-        shuffle(columns, round)
-        shout = tuple(column[0] for column in columns)
-        num_shouts[shout] += 1
-        if num_shouts[shout] == target:
-            return (round + 1) * int("".join(str(digit) for digit in shout))
+    shouts = collections.defaultdict(int)
+    for round in itertools.count(start=1):
+        columns = shuffle(columns, (round - 1) % NUM_COLUMNS)
+        round_shout = tuple(column[0] for column in columns)
+        shouts[round_shout] += 1
+        if shouts[round_shout] == 2024:
+            return round * int("".join(str(digit) for digit in round_shout))
 
 
 def part3(puzzle_input):
     """Solve part 3."""
     columns = parse_columns(puzzle_input)
-
     shouts = set()
     seen_columns = set()
-    for round in itertools.count():
-        shuffle(columns, round)
+
+    for round in itertools.count(start=1):
+        columns = shuffle(columns, (round - 1) % NUM_COLUMNS)
         shouts.add("".join(str(column[0]) for column in columns))
         col_fingerprint = (round % NUM_COLUMNS,) + tuple(tuple(col) for col in columns)
         if col_fingerprint in seen_columns:
@@ -59,13 +59,26 @@ def part3(puzzle_input):
         seen_columns.add(col_fingerprint)
 
 
-def shuffle(columns, round):
+def shuffle(columns, clapper_col):
     """Perform one shuffle of the dance"""
-    clapper = columns[round % NUM_COLUMNS].pop(0)
-    to_column = columns[(round + 1) % NUM_COLUMNS]
-    num_moves = (clapper - 1) % (len(to_column) * 2)
-    new_idx = min(num_moves, 2 * len(to_column) - num_moves)
-    to_column.insert(new_idx, clapper)
+    clapper, *prev_col = columns[clapper_col]
+    next_col = columns[(clapper_col + 1) % NUM_COLUMNS]
+    num_moves = abs((clapper % (len(next_col) * 2)) - 1)
+    new_idx = num_moves if num_moves <= len(next_col) else 2 * len(next_col) - num_moves
+
+    if clapper_col == NUM_COLUMNS - 1:
+        return (
+            [next_col[:new_idx] + [clapper] + next_col[new_idx:]]
+            + columns[1:clapper_col]
+            + [prev_col]
+        )
+    else:
+        return (
+            columns[:clapper_col]
+            + [prev_col]
+            + [next_col[:new_idx] + [clapper] + next_col[new_idx:]]
+            + columns[clapper_col + 2 :]
+        )
 
 
 if __name__ == "__main__":
