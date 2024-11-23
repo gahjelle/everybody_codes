@@ -7,7 +7,7 @@ from pathlib import Path
 from string import ascii_letters as letters
 
 
-def parse(puzzle_input):
+def parse_grid(puzzle_input):
     """Parse input."""
     return {
         (row, col): char
@@ -19,7 +19,7 @@ def parse(puzzle_input):
 
 def part1(puzzle_input):
     """Solve part 1."""
-    grid = parse(puzzle_input)
+    grid = parse_grid(puzzle_input)
     start = min(grid)
     return explore(grid, start)
 
@@ -31,33 +31,7 @@ def part2(puzzle_input):
 
 def part3(puzzle_input):
     """Solve part 3."""
-    grid = parse(puzzle_input)
-    num_steps = 0
-
-    # Left column
-    start_left = min(pos for pos, herb in grid.items() if herb == "K")
-    grid_left = {
-        (row, col): herb for (row, col), herb in grid.items() if col < start_left[1]
-    } | {start_left: "."}
-    num_steps += explore(grid_left, start_left)
-
-    # Right column
-    start_right = max(pos for pos, herb in grid.items() if herb == "K")
-    grid_right = {
-        (row, col): herb for (row, col), herb in grid.items() if col > start_right[1]
-    } | {start_right: "."}
-    num_steps += explore(grid_right, start_right)
-
-    # Center column
-    start_center = min(grid)
-    grid_center = {
-        (row, col): herb
-        for (row, col), herb in grid.items()
-        if start_left[1] <= col <= start_right[1]
-    } | {start_left: "X", start_right: "Y"}  # Replace K by X and Y
-    num_steps += explore(grid_center, start_center)
-
-    return num_steps
+    return part1(puzzle_input)
 
 
 def explore(grid, start):
@@ -65,12 +39,24 @@ def explore(grid, start):
     targets = {target for target in set(grid.values()) if target in letters}
     queue = [(0, start, ())]
     seen = {}
+    max_herbs = 0
     while queue:
         num_steps, pos, herbs = heapq.heappop(queue)
         if (pos, herbs) in seen:
             continue
         if pos == start and set(herbs) == targets:
             return num_steps
+
+        # Prune tree
+        if len(herbs) > max_herbs:
+            max_herbs = len(herbs)
+            if max_herbs > 2:
+                queue = [
+                    (num_steps, pos, herbs)
+                    for (num_steps, pos, herbs) in queue
+                    if len(herbs) >= max_herbs - 2
+                ]
+                heapq.heapify(queue)
 
         seen[pos, herbs] = num_steps
         for drow, dcol in [(-1, 0), (0, -1), (0, 1), (1, 0)]:
@@ -81,7 +67,10 @@ def explore(grid, start):
                     if grid[pos] in targets and grid[pos] not in herbs
                     else herbs
                 )
-                if num_steps + 1 < seen.get((new_pos, new_herbs), 9_999):
+                if (
+                    num_steps + 1 < seen.get((new_pos, new_herbs), 9_999)
+                    and len(herbs) >= max_herbs - 2
+                ):
                     heapq.heappush(queue, (num_steps + 1, new_pos, new_herbs))
     return 9_999
 
