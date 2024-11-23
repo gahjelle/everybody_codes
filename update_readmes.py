@@ -31,6 +31,7 @@ class Puzzle:
                 12: "Desert Shower",
                 13: "Never Gonna Let You Down",
                 14: "The House of Palms",
+                15: "From the Herbalist's Diary",
             }
         }
         return titles[self.year][self.day]

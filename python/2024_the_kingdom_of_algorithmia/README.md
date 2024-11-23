@@ -18,6 +18,7 @@ Solutions to [Everybody Codes 2024](https://everybody.codes/event/2024/) in [Pyt
 | 12   | Desert Shower                | [ec202412.py](12_desert_shower/ec202412.py)                | 106.20 μs ⚪️ |   1.20 ms 🔵 |   2.91 ms 🔵 |   4.21 ms 🔵 |
 | 13   | Never Gonna Let You Down     | [ec202413.py](13_never_gonna_let_you_down/ec202413.py)     | 253.45 μs ⚪️ |   6.88 ms 🔵 |  75.13 ms 🔵 |  82.26 ms 🔵 |
 | 14   | The House Of Palms           | [ec202414.py](14_the_house_of_palms/ec202414.py)           | 103.74 μs ⚪️ |   5.72 ms 🔵 | 288.23 ms 🔵 | 294.05 ms 🔵 |  | 15 |  |  |  |  |  |  |
+| 15   | From The Herbalist's Diary   | [ec202415.py](15_from_the_herbalists_diary/ec202415.py)    |   2.48 ms 🔵 | 239.21 ms 🔵 |   20.16 s 🔴 |   20.40 s 🔴 |
 | 16   |                              |                                                            |             |             |             |             |
 | 17   |                              |                                                            |             |             |             |             |
 | 18   |                              |                                                            |             |             |             |             |
