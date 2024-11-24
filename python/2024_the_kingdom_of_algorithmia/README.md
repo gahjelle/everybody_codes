@@ -11,7 +11,7 @@ Solutions to [Everybody Codes 2024](https://everybody.codes/event/2024/) in [Pyt
 | 5    | Pseudo-Random Clap Dance     | [ec202405.py](05_pseudo-random_clap_dance/ec202405.py)     |  23.08 μs ⚪️ |    1.61 s 🔴 | 292.30 ms 🔵 |    1.90 s 🔴 |
 | 6    | The Tree Of Titans           | [ec202406.py](06_the_tree_of_titans/ec202406.py)           |  98.59 μs ⚪️ |   2.29 ms 🔵 |  15.70 ms 🔵 |  18.09 ms 🔵 |
 | 7    |                              |                                                            |             |             |             |             |
-| 8    |                              |                                                            |             |             |             |             |
+| 8    | A Shrine For Nullpointer     | [ec202408.py](08_a_shrine_for_nullpointer/ec202408.py)     | 203.79 μs ⚪️ |  59.82 μs ⚪️ | 210.23 ms 🔵 | 210.49 ms 🔵 |
 | 9    | Sparkling Bugs               | [ec202409.py](09_sparkling_bugs/ec202409.py)               |  14.80 ms 🔵 |   3.28 ms 🔵 | 347.15 ms 🔵 | 365.23 ms 🔵 |
 | 10   | Shrine Needs To Shine        | [ec202410.py](10_shrine_needs_to_shine/ec202410.py)        | 136.34 μs ⚪️ |   8.04 ms 🔵 |  23.72 ms 🔵 |  31.90 ms 🔵 |
 | 11   | Biological Warfare           | [ec202411.py](11_biological_warfare/ec202411.py)           |  90.84 μs ⚪️ | 247.26 μs ⚪️ | 182.78 ms 🔵 | 183.11 ms 🔵 |
