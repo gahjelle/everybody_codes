@@ -25,6 +25,7 @@ class Puzzle:
                 4: "Royal Smith's Puzzle",
                 5: "Pseudo-Random Clap Dance",
                 6: "The Tree of Titans",
+                7: "Not Fast but Furious",
                 8: "A Shrine for Nullpointer",
                 9: "Sparkling Bugs",
                 10: "Shrine Needs to Shine",
