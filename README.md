@@ -3,7 +3,7 @@
 My solutions to the excellent puzzles at [everybody.codes](http://everybody.codes/) in different languages:
 
 - 🐍 [Python](python/) (48 🦆)
-- 💧 [Elixir](elixir/) (9 🦆)
+- 💧 [Elixir](elixir/) (12 🦆)
 
 All my solutions (48 🦆):
 
@@ -12,7 +12,7 @@ All my solutions (48 🦆):
 |     1 | [🐍](python/2024_the_kingdom_of_algorithmia/01_the_battle_for_the_farmlands)[💧](elixir/lib/2024/01_the_battle_for_the_farmlands) |
 |     2 | [🐍](python/2024_the_kingdom_of_algorithmia/02_the_runes_of_power)                                                                |
 |     3 | [🐍](python/2024_the_kingdom_of_algorithmia/03_mining_maestro)[💧](elixir/lib/2024/03_mining_maestro)                             |
-|     4 | [🐍](python/2024_the_kingdom_of_algorithmia/04_royal_smiths_puzzle)                                                               |
+|     4 | [🐍](python/2024_the_kingdom_of_algorithmia/04_royal_smiths_puzzle)[💧](elixir/lib/2024/04_royal_smiths_puzzle)                   |
 |     5 | [🐍](python/2024_the_kingdom_of_algorithmia/05_pseudo-random_clap_dance)                                                          |
 |     6 | [🐍](python/2024_the_kingdom_of_algorithmia/06_the_tree_of_titans)                                                                |
 |     7 | [🐍](python/2024_the_kingdom_of_algorithmia/07_not_fast_but_furious)                                                              |

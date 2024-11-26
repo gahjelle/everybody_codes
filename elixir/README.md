@@ -1,13 +1,13 @@
 # Everybody Codes in Elixir
 
-Solutions to [Everybody Codes](https://everybody.codes/) in [Elixir](https://elixir-lang.org/) (9🦆):
+Solutions to [Everybody Codes](https://everybody.codes/) in [Elixir](https://elixir-lang.org/) (12🦆):
 
 |   Day | [2024](lib/2024)                                   |
 |------:|:---------------------------------------------------|
 |     1 | [🦆🦆🦆](lib/2024/01_the_battle_for_the_farmlands) |
 |     2 |                                                    |
 |     3 | [🦆🦆🦆](lib/2024/03_mining_maestro)               |
-|     4 |                                                    |
+|     4 | [🦆🦆🦆](lib/2024/04_royal_smiths_puzzle)          |
 |     5 |                                                    |
 |     6 |                                                    |
 |     7 |                                                    |

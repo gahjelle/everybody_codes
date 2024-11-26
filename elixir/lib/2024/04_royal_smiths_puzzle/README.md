@@ -6,4 +6,4 @@ Puzzle text: <https://everybody.codes/event/2024/quests/4>
 
 Solutions in other languages:
 
-- [💧 Elixir](../../../elixir/lib/2024/04_royal_smiths_puzzle)
+- [🐍 Python](../../../../python/2024_the_kingdom_of_algorithmia/04_royal_smiths_puzzle)

@@ -7,7 +7,7 @@ Solutions to [Everybody Codes 2024](https://everybody.codes/event/2024/quests) i
 | 1    | The Battle For The Farmlands | [ec202401.ex](01_the_battle_for_the_farmlands/ec202401.ex) | 166.21 µs ⚪️ | 318.73 µs ⚪️ |   1.56 ms 🔵 |   2.04 ms 🔵 |
 | 2    |                              |                                                            |             |             |             |             |
 | 3    | Mining Maestro               | [ec202403.ex](03_mining_maestro/ec202403.ex)               |  48.24 µs ⚪️ |   1.30 ms 🔵 |   7.31 ms 🔵 |   8.66 ms 🔵 |
-| 4    |                              |                                                            |             |             |             |             |
+| 4    | Royal Smith's Puzzle         | [ec202404.ex](04_royal_smiths_puzzle/ec202404.ex)          | 744.00 ns ⚪️ |  10.25 µs ⚪️ |  32.78 ms 🔵 |  32.79 ms 🔵 |
 | 5    |                              |                                                            |             |             |             |             |
 | 6    |                              |                                                            |             |             |             |             |
 | 7    |                              |                                                            |             |             |             |             |
