@@ -34,6 +34,7 @@ class Puzzle:
                 13: "Never Gonna Let You Down",
                 14: "The House of Palms",
                 15: "From the Herbalist's Diary",
+                16: "Cat Grin of Fortune",
             }
         }
         return titles[self.year][self.day]

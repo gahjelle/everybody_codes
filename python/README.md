@@ -1,6 +1,6 @@
 # Everybody Codes in Python
 
-Solutions to [Everybody Codes](https://everybody.codes/) in [Python](https://www.python.org/) (45🦆):
+Solutions to [Everybody Codes](https://everybody.codes/) in [Python](https://www.python.org/) (48🦆):
 
 |   Day | [2024](2024_the_kingdom_of_algorithmia)                                   |
 |------:|:--------------------------------------------------------------------------|
@@ -19,7 +19,7 @@ Solutions to [Everybody Codes](https://everybody.codes/) in [Python](https://www
 |    13 | [🦆🦆🦆](2024_the_kingdom_of_algorithmia/13_never_gonna_let_you_down)     |
 |    14 | [🦆🦆🦆](2024_the_kingdom_of_algorithmia/14_the_house_of_palms)           |
 |    15 | [🦆🦆🦆](2024_the_kingdom_of_algorithmia/15_from_the_herbalists_diary)    |
-|    16 |                                                                           |
+|    16 | [🦆🦆🦆](2024_the_kingdom_of_algorithmia/16_cat_grin_of_fortune)          |
 |    17 |                                                                           |
 |    18 |                                                                           |
 |    19 |                                                                           |
