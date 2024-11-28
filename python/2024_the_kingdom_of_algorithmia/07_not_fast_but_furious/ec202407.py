@@ -57,7 +57,7 @@ def parse_track(track):
         segments.append(SYMBOLS[grid[row, col]])
         for drow, dcol in [(0, 1), (1, 0), (-1, 0), (0, -1)]:
             if (row + drow, col + dcol) != (prev_row, prev_col) and grid.get(
-                (row + drow, col + dcol), None
+                (row + drow, col + dcol)
             ) in SYMBOLS:
                 prev_row, prev_col = row, col
                 row, col = row + drow, col + dcol

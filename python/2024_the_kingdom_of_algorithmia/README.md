@@ -20,7 +20,7 @@ Solutions to [Everybody Codes 2024](https://everybody.codes/event/2024/) in [Pyt
 | 14   | The House Of Palms           | [ec202414.py](14_the_house_of_palms/ec202414.py)           | 103.74 μs ⚪️ |   5.72 ms 🔵 | 288.23 ms 🔵 | 294.05 ms 🔵 |
 | 15   | From The Herbalist's Diary   | [ec202415.py](15_from_the_herbalists_diary/ec202415.py)    |   4.28 ms 🔵 | 318.43 ms 🔵 |    1.18 s 🔴 |    1.50 s 🔴 |
 | 16   | Cat Grin Of Fortune          | [ec202416.py](16_cat_grin_of_fortune/ec202416.py)          |  54.65 μs ⚪️ | 293.07 ms 🔵 | 569.97 ms 🔵 | 863.10 ms 🔵 |
-| 17   |                              |                                                            |             |             |             |             |
+| 17   | Galactic Geometry            | [ec202417.py](17_galactic_geometry/ec202417.py)            | 215.41 μs ⚪️ |  15.80 ms 🔵 | 962.39 ms 🔵 | 978.41 ms 🔵 |
 | 18   |                              |                                                            |             |             |             |             |
 | 19   |                              |                                                            |             |             |             |             |
 | 20   |                              |                                                            |             |             |             |             |
