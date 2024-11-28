@@ -35,6 +35,8 @@ class Puzzle:
                 14: "The House of Palms",
                 15: "From the Herbalist's Diary",
                 16: "Cat Grin of Fortune",
+                17: "Galactic Geometry",
+                18: "The Ring",
             }
         }
         return titles[self.year][self.day]

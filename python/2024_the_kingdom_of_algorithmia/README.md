@@ -21,6 +21,6 @@ Solutions to [Everybody Codes 2024](https://everybody.codes/event/2024/) in [Pyt
 | 15   | From The Herbalist's Diary   | [ec202415.py](15_from_the_herbalists_diary/ec202415.py)    |   4.28 ms 🔵 | 318.43 ms 🔵 |    1.18 s 🔴 |    1.50 s 🔴 |
 | 16   | Cat Grin Of Fortune          | [ec202416.py](16_cat_grin_of_fortune/ec202416.py)          |  54.65 μs ⚪️ | 293.07 ms 🔵 | 569.97 ms 🔵 | 863.10 ms 🔵 |
 | 17   | Galactic Geometry            | [ec202417.py](17_galactic_geometry/ec202417.py)            | 215.41 μs ⚪️ |  15.80 ms 🔵 | 962.39 ms 🔵 | 978.41 ms 🔵 |
-| 18   |                              |                                                            |             |             |             |             |
+| 18   | The Ring                     | [ec202418.py](18_the_ring/ec202418.py)                     | 231.70 μs ⚪️ |  10.89 ms 🔵 |    4.25 s 🔴 |    4.26 s 🔴 |
 | 19   |                              |                                                            |             |             |             |             |
 | 20   |                              |                                                            |             |             |             |             |
