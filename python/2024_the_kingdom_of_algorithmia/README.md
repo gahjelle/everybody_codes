@@ -22,5 +22,5 @@ Solutions to [Everybody Codes 2024](https://everybody.codes/event/2024/) in [Pyt
 | 16   | Cat Grin Of Fortune          | [ec202416.py](16_cat_grin_of_fortune/ec202416.py)          |  54.65 μs ⚪️ | 293.07 ms 🔵 | 569.97 ms 🔵 | 863.10 ms 🔵 |
 | 17   | Galactic Geometry            | [ec202417.py](17_galactic_geometry/ec202417.py)            | 215.41 μs ⚪️ |  15.80 ms 🔵 | 962.39 ms 🔵 | 978.41 ms 🔵 |
 | 18   | The Ring                     | [ec202418.py](18_the_ring/ec202418.py)                     | 231.70 μs ⚪️ |  10.89 ms 🔵 |    4.25 s 🔴 |    4.26 s 🔴 |
-| 19   |                              |                                                            |             |             |             |             |
+| 19   | Encrypted Duck               | [ec202419.py](19_encrypted_duck/ec202419.py)               | 122.61 μs ⚪️ |   6.37 ms 🔵 |    1.14 s 🔴 |    1.15 s 🔴 |
 | 20   |                              |                                                            |             |             |             |             |

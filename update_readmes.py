@@ -37,6 +37,7 @@ class Puzzle:
                 16: "Cat Grin of Fortune",
                 17: "Galactic Geometry",
                 18: "The Ring",
+                19: "Encrypted Duck",
             }
         }
         return titles[self.year][self.day]
