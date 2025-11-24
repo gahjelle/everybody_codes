@@ -3,6 +3,8 @@ puzzles/
 everybody_codes_*.txt
 output.txt
 output.*.txt
+message*.txt
+expected.toml
 
 Makefile
 timings.*.md
@@ -10,6 +12,7 @@ stats.md
 
 ec_template.*
 README.template
+README.*.template
 join_ec_files.py
 download_input.py
 

@@ -38,6 +38,7 @@ class Puzzle:
                 17: "Galactic Geometry",
                 18: "The Ring",
                 19: "Encrypted Duck",
+                20: "Gliding Finale",
             }
         }
         return titles[self.year][self.day]

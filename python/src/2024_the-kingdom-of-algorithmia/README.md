@@ -1,6 +1,6 @@
-# Everybody Codes - 2024 in python
+# Everybody Codes - 2024 in Python
 
-Solutions to [everybody.codes 2024](http://everybody.codes/) in python:
+Solutions to [everybody.codes 2024](http://everybody.codes/) in Python:
 
 | Day | Puzzle | Part1 | Part2 | Part3 |
 | --- | --- | --- | --- | --- |

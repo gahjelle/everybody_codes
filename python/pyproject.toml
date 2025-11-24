@@ -1,21 +1,32 @@
 [build-system]
-requires      = ["setuptools", "setuptools-scm"]
-build-backend = "setuptools.build_meta"
+requires = ["uv_build>=0.9.7,<0.10.0"]
+build-backend = "uv_build"
 
 [project]
-name         = "ecodes"
-version      = "0.0.1"
-dependencies = []
+name = "everybody_codes"
+version = "0.1.0"
+description = "Solutions to the wonderful Everybody Codes puzzles"
+readme = "README.md"
+authors = [{ name = "Geir Arne Hjelle", email = "geirarne@gmail.com" }]
+requires-python = ">=3.11"
+dependencies = [
+    "gahllenges",
+    "parse>=1.20.2",
+    "pillow>=12.0.0",
+    "pydantic>=2.11.9",
+]
 
-[tool.setuptools]
-packages = ["ecodes"]
+[project.scripts]
+ec = "everybody_codes.__main__:main"
 
-[tool.pytest.ini_options]
-addopts             = "--doctest-modules --doctest-continue-on-failure"
-doctest_optionflags = "NORMALIZE_WHITESPACE"
+[dependency-groups]
+cli = ["configaroo>=0.6.1", "cyclopts>=3.24.0", "rich>=14.1.0"]
+dev = ["ipython>=9.5.0", "ruff>=0.13.1"]
 
-[tool.ruff]
+[tool.uv.sources]
+gahllenges = { path = "../../gahllenges", editable = true }
 
-[tool.docformatter]
-recursive         = true
-wrap-descriptions = 0
+[tool.uv.workspace]
+members = [
+    "tull",
+]
