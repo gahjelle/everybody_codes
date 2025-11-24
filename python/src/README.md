@@ -1,6 +1,6 @@
 # Everybody Codes - Python
 
-Solutions to [everybody.codes](http://everybody.codes/) in Python (113 🦆):
+Solutions to [everybody.codes](http://everybody.codes/) in Python (116 🦆):
 
 | Day | 1 | 2024 | 2025 |
 | --- | --- | --- | --- |
@@ -19,7 +19,7 @@ Solutions to [everybody.codes](http://everybody.codes/) in Python (113 🦆):
 | 13 |  | [🦆🦆🦆](2024_the-kingdom-of-algorithmia/13_never-gonna-let-you-down) | [🦆🦆🦆](2025_the-song-of-ducks-and-dragons/13_unlocking-the-mountain) |
 | 14 |  | [🦆🦆🦆](2024_the-kingdom-of-algorithmia/14_the-house-of-palms) | [🦆🦆🦆](2025_the-song-of-ducks-and-dragons/14_the-game-of-light) |
 | 15 |  | [🦆🦆🦆](2024_the-kingdom-of-algorithmia/15_from-the-herbalists-diary) | [🦆🦆🦆](2025_the-song-of-ducks-and-dragons/15_definitely-not-a-maze) |
-| 16 |  | [🦆🦆🦆](2024_the-kingdom-of-algorithmia/16_cat-grin-of-fortune) |  |
+| 16 |  | [🦆🦆🦆](2024_the-kingdom-of-algorithmia/16_cat-grin-of-fortune) | [🦆🦆🦆](2025_the-song-of-ducks-and-dragons/16_harmonics-of-stone) |
 | 17 |  | [🦆🦆🦆](2024_the-kingdom-of-algorithmia/17_galactic-geometry) |  |
 | 18 |  | [🦆🦆🦆](2024_the-kingdom-of-algorithmia/18_the-ring) |  |
 | 19 |  | [🦆🦆🦆](2024_the-kingdom-of-algorithmia/19_encrypted-duck) |  |

@@ -2,7 +2,7 @@
 
 My solutions to the excellent puzzles at [everybody.codes](http://everybody.codes/) in different languages:
 
-- 🐍 Python: 113 🦆
+- 🐍 Python: 116 🦆
 - 💧 Elixir: 3 🦆
 
 All solutions:
@@ -24,7 +24,7 @@ All solutions:
 | 13 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/13_never-gonna-let-you-down) | [🐍](python/src/2025_the-song-of-ducks-and-dragons/13_unlocking-the-mountain) |
 | 14 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/14_the-house-of-palms) | [🐍](python/src/2025_the-song-of-ducks-and-dragons/14_the-game-of-light) |
 | 15 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/15_from-the-herbalists-diary) | [🐍](python/src/2025_the-song-of-ducks-and-dragons/15_definitely-not-a-maze) |
-| 16 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/16_cat-grin-of-fortune) |  |
+| 16 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/16_cat-grin-of-fortune) | [🐍](python/src/2025_the-song-of-ducks-and-dragons/16_harmonics-of-stone) |
 | 17 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/17_galactic-geometry) |  |
 | 18 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/18_the-ring) |  |
 | 19 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/19_encrypted-duck) |  |

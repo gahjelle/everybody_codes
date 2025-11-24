@@ -19,3 +19,4 @@ Solutions to [everybody.codes 2025](http://everybody.codes/) in Python:
 | 13 | Unlocking The Mountain | 28.19 μs ⚪️ | 163.57 μs ⚪️ | 2.23 ms 🔵 |
 | 14 | The Game Of Light | 5.42 ms 🔵 | 801.79 ms 🔵 | 2.21 s 🔴 |
 | 15 | Definitely Not A Maze | 11.53 ms 🔵 | 66.78 ms 🔵 | 116.33 ms 🔵 |
+| 16 | Harmonics Of Stone | 35.39 μs ⚪️ | 3.05 ms 🔵 | 8.04 ms 🔵 |
