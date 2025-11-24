@@ -2,9 +2,9 @@
 interpreter = "pypy311"
 code = "ec202515.py"
 input_path = "example1_p1.txt"
-value = 6
+value = 8
 solved = true
-duration = 0.00015940197044983506
+duration = 0.00029540200011979323
 
 [part1-example2_p1]
 interpreter = "pypy311"
@@ -12,12 +12,12 @@ code = "ec202515.py"
 input_path = "example2_p1.txt"
 value = 16
 solved = true
-duration = 0.0005255769938230515
+duration = 0.0010256690002279356
 
 [part3-example1_p3]
 interpreter = "pypy311"
 code = "ec202515.py"
 input_path = "example1_p3.txt"
-value = 16
+value = 2_038
 solved = true
-duration = 0.0030820630490779877
+duration = 0.0022830670004623244

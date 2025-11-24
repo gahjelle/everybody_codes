@@ -1,6 +1,5 @@
 """Everybody Codes quest 15, 2025: Definitely Not a Maze."""
 
-import collections
 import heapq
 from typing import TypeAlias
 
@@ -20,7 +19,12 @@ def parse(
 
     Find possible coordinates and map them to consecutive numbers to help keep
     the search efficient.
+
+    Assumes that each "corridor" is at least two spaces wide. Use row and col to
+    designate original coordinates and r and c as notation for coordinates in
+    the compressed space.
     """
+    # Find corners in order to find the compressed coordinates
     rows, cols, (row, col), direction = {0}, {0}, (0, 0), (-1, 0)
     for command in puzzle_input.split(","):
         turn, *steps = command
@@ -31,17 +35,19 @@ def parse(
         rows.add(row)
         cols.add(col)
 
+    # Map original coordinates to a compressed space
     row2r = {
-        r: i
+        row + offset: 3 * idx + offset
+        for offset in [0, -1, 1]
         for idx, row in enumerate(sorted(rows))
-        for r, i in [(row - 1, 3 * idx - 1), (row, 3 * idx), (row + 1, 3 * idx + 1)]
     }
     col2c = {
-        c: i
+        col + offset: 3 * idx + offset
+        for offset in [0, -1, 1]
         for idx, col in enumerate(sorted(cols))
-        for c, i in [(col - 1, 3 * idx - 1), (col, 3 * idx), (col + 1, 3 * idx + 1)]
     }
 
+    # Create walls in the compressed space
     start = (row2r[0], col2c[0])
     walls, (row, col), (r, c), direction = {start}, (0, 0), start, (-1, 0)
     for command in puzzle_input.split(","):
@@ -57,19 +63,20 @@ def parse(
             c += dcol
             walls.add((r, c))
         row, col = row + drow * num_steps, col + dcol * num_steps
-    return walls, start, (r, c), row2r, col2c
+
+    return (
+        walls,
+        start,
+        (r, c),
+        {r: row for row, r in row2r.items()},
+        {c: col for col, c in col2c.items()},
+    )
 
 
 def part(puzzle_input: str) -> int:
     """Solve each part."""
-    walls, start, end, rcoords, ccoords = parse(puzzle_input)
-    return find_shortest_path(
-        walls - {start, end},
-        start,
-        end,
-        {r: row for row, r in rcoords.items()},
-        {c: col for col, c in ccoords.items()},
-    )
+    walls, start, end, r2row, c2col = parse(puzzle_input)
+    return find_shortest_path(walls - {start, end}, start, end, r2row, c2col)
 
 
 part1 = part
@@ -81,8 +88,8 @@ def find_shortest_path(
     walls: Grid,
     start: Coordinate,
     end: Coordinate,
-    rcoords: dict[int, int],
-    ccoords: dict[int, int],
+    r2row: dict[int, int],
+    c2col: dict[int, int],
 ) -> int:
     """Find the shortest path, taking step lengths into account."""
     queue = [(0, start)]
@@ -95,11 +102,15 @@ def find_shortest_path(
             continue
         seen.add(pos)
 
-        row, col = pos
-        r, c = rcoords[row], ccoords[col]
-        for npos in [(row - 1, col), (row, col - 1), (row, col + 1), (row + 1, col)]:
+        r, c = pos
+        row, col = r2row[r], c2col[c]
+        for npos in [(r - 1, c), (r, c - 1), (r, c + 1), (r + 1, c)]:
             if npos not in walls and npos not in seen:
-                nrow, ncol = npos
-                nr, nc = rcoords[nrow], ccoords[ncol]
-                heapq.heappush(queue, (num_steps + abs(nr - r) + abs(nc - c), npos))
+                nr, nc = npos
+                if nr not in r2row or nc not in c2col:  # Don't search outside the grid
+                    continue
+                nrow, ncol = r2row[nr], c2col[nc]
+                heapq.heappush(
+                    queue, (num_steps + abs(nrow - row) + abs(ncol - col), npos)
+                )
     return 0

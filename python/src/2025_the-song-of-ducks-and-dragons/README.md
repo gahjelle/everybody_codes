@@ -18,4 +18,4 @@ Solutions to [everybody.codes 2025](http://everybody.codes/) in Python:
 | 12 | One Spark To Burn Them All | 554.56 μs ⚪️ | 14.80 ms 🔵 | 18.03 s 🔴 |
 | 13 | Unlocking The Mountain | 28.19 μs ⚪️ | 163.57 μs ⚪️ | 2.23 ms 🔵 |
 | 14 | The Game Of Light | 5.42 ms 🔵 | 801.79 ms 🔵 | 2.21 s 🔴 |
-| 15 | Definitely Not A Maze | 11.48 ms 🔵 | 67.25 ms 🔵 | 120.24 ms 🔵 |
+| 15 | Definitely Not A Maze | 11.53 ms 🔵 | 66.78 ms 🔵 | 116.33 ms 🔵 |
