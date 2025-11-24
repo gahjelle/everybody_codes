@@ -2,7 +2,7 @@
 
 My solutions to the excellent puzzles at [everybody.codes](http://everybody.codes/) in different languages:
 
-- 🐍 Python: 110 🦆
+- 🐍 Python: 113 🦆
 - 💧 Elixir: 3 🦆
 
 All solutions:
@@ -28,3 +28,4 @@ All solutions:
 | 17 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/17_galactic-geometry) |  |
 | 18 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/18_the-ring) |  |
 | 19 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/19_encrypted-duck) |  |
+| 20 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/20_gliding-finale) |  |

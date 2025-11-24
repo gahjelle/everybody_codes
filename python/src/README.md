@@ -1,6 +1,6 @@
 # Everybody Codes - Python
 
-Solutions to [everybody.codes](http://everybody.codes/) in Python (110 🦆):
+Solutions to [everybody.codes](http://everybody.codes/) in Python (113 🦆):
 
 | Day | 1 | 2024 | 2025 |
 | --- | --- | --- | --- |
@@ -23,3 +23,4 @@ Solutions to [everybody.codes](http://everybody.codes/) in Python (110 🦆):
 | 17 |  | [🦆🦆🦆](2024_the-kingdom-of-algorithmia/17_galactic-geometry) |  |
 | 18 |  | [🦆🦆🦆](2024_the-kingdom-of-algorithmia/18_the-ring) |  |
 | 19 |  | [🦆🦆🦆](2024_the-kingdom-of-algorithmia/19_encrypted-duck) |  |
+| 20 |  | [🦆🦆🦆](2024_the-kingdom-of-algorithmia/20_gliding-finale) |  |

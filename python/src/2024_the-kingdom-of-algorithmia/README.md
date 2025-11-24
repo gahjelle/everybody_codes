@@ -23,3 +23,4 @@ Solutions to [everybody.codes 2024](http://everybody.codes/) in Python:
 | 17 | Galactic Geometry | 341.07 μs ⚪️ | 18.92 ms 🔵 | 193.99 ms 🔵 |
 | 18 | The Ring | 278.71 μs ⚪️ | 16.43 ms 🔵 | 1.65 s 🔴 |
 | 19 | Encrypted Duck | 203.32 μs ⚪️ | 18.82 ms 🔵 | 732.02 ms 🔵 |
+| 20 | Gliding Finale | 38.30 ms 🔵 | 4.53 m ⚫️ | 2.44 ms 🔵 |
