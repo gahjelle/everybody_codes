@@ -1,0 +1,23 @@
+[part1-example1_p1]
+interpreter = "pypy311"
+code = "ec202501.py"
+input_path = "example1_p1.txt"
+value = "Fyrryn"
+solved = true
+duration = 2.0700000277429353e-05
+
+[part2-example1_p2]
+interpreter = "pypy311"
+code = "ec202501.py"
+input_path = "example1_p2.txt"
+value = "Elarzris"
+solved = true
+duration = 5.176600006961962e-05
+
+[part3-example1_p3]
+interpreter = "pypy311"
+code = "ec202501.py"
+input_path = "example1_p3.txt"
+value = "Drakzyph"
+solved = true
+duration = 3.488299989840016e-05
