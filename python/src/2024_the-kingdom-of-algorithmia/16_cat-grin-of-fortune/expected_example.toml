@@ -1,0 +1,23 @@
+[part1-example_p1]
+interpreter = "pypy311"
+code = "ec202416.py"
+input_path = "example_p1.txt"
+value = ">.- -.- ^,-"
+solved = true
+duration = 4.490397986955941e-05
+
+[part2-example_p2]
+interpreter = "pypy311"
+code = "ec202416.py"
+input_path = "example_p2.txt"
+value = 280_014_668_134
+solved = true
+duration = 0.0016773040115367621
+
+[part3-example_p3]
+interpreter = "pypy311"
+code = "ec202416.py"
+input_path = "example_p3.txt"
+value = "627 128"
+solved = true
+duration = 0.26753735000966117

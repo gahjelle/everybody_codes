@@ -1,0 +1,23 @@
+[part1-example_p1]
+interpreter = "pypy311"
+code = "ec202405.py"
+input_path = "example_p1.txt"
+value = 2_323
+solved = true
+duration = 4.62950001747231e-05
+
+[part2-example_p2]
+interpreter = "pypy311"
+code = "ec202405.py"
+input_path = "example_p2.txt"
+value = 50_877_075
+solved = true
+duration = 0.012099627000679902
+
+[part3-example_p3]
+interpreter = "pypy311"
+code = "ec202405.py"
+input_path = "example_p3.txt"
+value = 6_584
+solved = true
+duration = 0.00024707700049475534

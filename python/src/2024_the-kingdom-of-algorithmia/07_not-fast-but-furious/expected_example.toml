@@ -1,0 +1,23 @@
+[part1-example_p1]
+interpreter = "pypy311"
+code = "ec202407.py"
+input_path = "example_p1.txt"
+value = "BDCA"
+solved = true
+duration = 0.0002003009994950844
+
+[part2-example_p2]
+interpreter = "pypy311"
+code = "ec202407.py"
+input_path = "example_p2.txt"
+value = "DCBA"
+solved = true
+duration = 0.003991222999502497
+
+[part3-example_p3]
+interpreter = "pypy311"
+code = "ec202407.py"
+input_path = "example_p3.txt"
+value = 53
+solved = true
+duration = 0.09067976400001498

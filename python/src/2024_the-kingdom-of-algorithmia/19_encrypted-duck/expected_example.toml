@@ -1,0 +1,23 @@
+[part1-example_p1]
+interpreter = "pypy311"
+code = "ec202419.py"
+input_path = "example_p1.txt"
+value = "WIN"
+solved = true
+duration = 8.17210238892585e-05
+
+[part2-example_p2]
+interpreter = "pypy311"
+code = "ec202419.py"
+input_path = "example_p2.txt"
+value = "VICTORY"
+solved = true
+duration = 0.00034761300776153803
+
+[part3-example_p3]
+interpreter = "pypy311"
+code = "ec202419.py"
+input_path = "example_p3.txt"
+value = "."
+solved = true
+duration = 0.00033895697561092675

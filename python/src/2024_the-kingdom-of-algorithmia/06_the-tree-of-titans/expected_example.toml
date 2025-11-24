@@ -1,0 +1,23 @@
+[part1-example_p1]
+interpreter = "pypy311"
+code = "ec202406.py"
+input_path = "example_p1.txt"
+value = "RRB@"
+solved = true
+duration = 4.2178000512649305e-05
+
+[part2-example_p2]
+interpreter = "pypy311"
+code = "ec202406.py"
+input_path = "example_p2.txt"
+value = "RB@"
+solved = true
+duration = 7.548399935330963e-05
+
+[part3-example_p3]
+interpreter = "pypy311"
+code = "ec202406.py"
+input_path = "example_p3.txt"
+value = "RB@"
+solved = true
+duration = 5.2737999794771895e-05

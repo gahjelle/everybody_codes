@@ -1,9 +1,0 @@
-# Royal Smith's Puzzle
-
-**Everybody Codes: Day 4, 2024**
-
-Puzzle text: <https://everybody.codes/event/2024/quests/4>
-
-Solutions in other languages:
-
-- [💧 Elixir](../../../elixir/lib/2024/04_royal_smiths_puzzle)
