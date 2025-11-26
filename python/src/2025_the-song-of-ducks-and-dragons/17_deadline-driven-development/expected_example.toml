@@ -1,0 +1,39 @@
+[part1-example1_p1]
+interpreter = "pypy311"
+code = "ec202517.py"
+input_path = "example1_p1.txt"
+value = 1_573
+solved = true
+duration = 0.0020878619980067015
+
+[part2-example1_p2]
+interpreter = "pypy311"
+code = "ec202517.py"
+input_path = "example1_p2.txt"
+value = 1_090
+solved = true
+duration = 0.002249740995466709
+
+[part3-example1_p3]
+interpreter = "pypy311"
+code = "ec202517.py"
+input_path = "example1_p3.txt"
+value = 592
+solved = true
+duration = 0.029305619005754124
+
+[part3-example2_p3]
+interpreter = "pypy311"
+code = "ec202517.py"
+input_path = "example2_p3.txt"
+value = 330
+solved = true
+duration = 0.020076617001905106
+
+[part3-example3_p3]
+interpreter = "pypy311"
+code = "ec202517.py"
+input_path = "example3_p3.txt"
+value = 3_180
+solved = true
+duration = 0.03878786900168052
