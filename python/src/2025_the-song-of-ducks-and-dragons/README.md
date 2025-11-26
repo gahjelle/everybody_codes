@@ -20,4 +20,4 @@ Solutions to [everybody.codes 2025](http://everybody.codes/) in Python:
 | 14 | The Game Of Light | 🔵 5.42 ms | 🔵 801.79 ms | 🔴 2.21 s |
 | 15 | Definitely Not A Maze | 🔵 11.53 ms | 🔵 66.78 ms | 🔵 116.33 ms |
 | 16 | Harmonics Of Stone | ⚪️ 35.39 μs | 🔵 3.05 ms | 🔵 8.04 ms |
-| 17 | Deadline Driven Development | 🔵 1.93 ms | 🔵 16.95 ms | 🔴 2.82 s |
+| 17 | Deadline Driven Development | 🔵 1.75 ms | 🔵 14.81 ms | 🔴 1.57 s |

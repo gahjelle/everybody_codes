@@ -5,116 +5,110 @@ import itertools
 from typing import TypeAlias
 
 Coordinate: TypeAlias = tuple[int, int]
+StrGrid: TypeAlias = dict[Coordinate, str]
 Grid: TypeAlias = dict[Coordinate, int]
 
+INFINITY = 999_999
 
-def parse_vulcano(puzzle_input: str) -> tuple[Grid, Coordinate | None]:
-    """Parse a vulcano grid."""
+
+def parse_grid(puzzle_input: str) -> StrGrid:
+    """Parse the input grid. Adjust coordinates to be centered around vulcano."""
     grid = {
         (row, col): char
         for row, line in enumerate(puzzle_input.splitlines())
         for col, char in enumerate(line)
     }
     vrow, vcol = next(pos for pos, char in grid.items() if char == "@")
-    srow, scol = next((pos for pos, char in grid.items() if char == "S"), (None, None))
+    return {(row - vrow, col - vcol): char for (row, col), char in grid.items()}
+
+
+def parse_vulcano(puzzle_input: str) -> Grid:
+    """Parse a vulcano grid."""
     return {
-        (row - vrow, col - vcol): int(char)
-        for (row, col), char in grid.items()
-        if char not in "@S"
-    }, None if (srow is None or scol is None) else (srow - vrow, scol - vcol)
+        pos: int(char)
+        for pos, char in parse_grid(puzzle_input).items()
+        if char not in "@"
+    }
+
+
+def parse_foothills(puzzle_input: str) -> tuple[Coordinate, Grid]:
+    """Parse a vulcano grid, include start coordinates."""
+    grid = parse_grid(puzzle_input)
+    start = next(pos for pos, char in grid.items() if char == "S")
+    return start, {pos: 0 if char in "S@" else int(char) for pos, char in grid.items()}
 
 
 def part1(puzzle_input: str, radius: int = 10) -> int:
     """Solve part 1."""
-    grid, _ = parse_vulcano(puzzle_input)
-    return sum(
-        lava for (row, col), lava in grid.items() if row**2 + col**2 <= radius**2
-    )
+    grid = parse_vulcano(puzzle_input)
+    return sum(lava(grid, max_radius=radius).values())
 
 
 def part2(puzzle_input: str) -> int:
     """Solve part 2."""
-    grid, _ = parse_vulcano(puzzle_input)
+    grid = parse_vulcano(puzzle_input)
     max_radius = max(max(grid))
-
-    prev = 0
-    damages = []
-    for radius in range(1, max_radius + 1):
-        damage = sum(
-            lava for (row, col), lava in grid.items() if row**2 + col**2 <= radius**2
-        )
-        damages.append((damage - prev, radius))
-        prev = damage
-
+    damages = [
+        (sum(lava(grid, min_radius=r, max_radius=r + 1).values()), r + 1)
+        for r in range(max_radius)
+    ]
     max_damage, radius = max(damages)
     return max_damage * radius
 
 
 def part3(puzzle_input: str) -> int:
     """Solve part 3."""
-    grid, start = parse_vulcano(puzzle_input)
-    if start is None:
-        return 0
-
-    max_radius = max(max(grid))
-    for radius in range(max_radius * 2):
+    (srow, scol), grid = parse_foothills(puzzle_input)
+    for radius in itertools.count(start=abs(srow) // 3):
         if steps := find_loop(
-            {
-                (row, col): char
-                for (row, col), char in grid.items()
-                if row**2 + col**2 > radius**2
-            },
-            start,
-            max_steps=30 * radius + 29,
+            foothills(grid, radius=radius), (srow, scol), max_steps=30 * radius + 29
         ):
             return steps * radius
     return 0
 
 
+def lava(vulcano: Grid, min_radius: int = 0, max_radius: int = INFINITY) -> Grid:
+    """Find the erupted area of a vulcano with the given radius."""
+    return {
+        (row, col): value
+        for (row, col), value in vulcano.items()
+        if min_radius**2 < row**2 + col**2 <= max_radius**2
+    }
+
+
+def foothills(vulcano: Grid, radius: int) -> Grid:
+    """Find the non-damaged area around the vulcano."""
+    return {
+        (row, col): value
+        for (row, col), value in vulcano.items()
+        if row**2 + col**2 > radius**2
+    }
+
+
 def find_loop(grid: Grid, start: Coordinate, max_steps: int) -> int:
-    """Find the time it takes to create a loop.
+    """Find the length of the shortest loop around the vulcano.
 
-    Return 0 if the loop can not be made within the given number of steps.
-
-    Create paths from the start to the middle column (col 0) below the vulcano.
-    Use left and right variables to track whether the path runs to the left or
-    to the right of the vulcano. Find the best combination of a left and right
-    path.
+    Use loop to count the number of loops the path makes. In practice, loop
+    counts how many times the path crosses the ray going directly south from the
+    vulcano.
     """
-    best_loop = max_steps + 1
-    queue = [(0, start, False, False)]
-    steps = {}
+    ray = {(-1, 0): 1, (0, -1): -1}
+    queue = [(0, start, 0)]
+    seen = set()
     while queue:
-        num_steps, (row, col), left, right = heapq.heappop(queue)
+        num_steps, (row, col), loop = heapq.heappop(queue)
         if num_steps > max_steps:
             break
-
-        # Do book-keeping for middle column below vulcano
-        if col == 0 and row > 0:
-            total_steps = (
-                steps.get((row, -1), max_steps)  # Left path
-                + steps.get((row, 1), max_steps)  # Right path
-                + grid[row, 0]  # Connection point
-            )
-            best_loop = min(best_loop, total_steps)
-
-        # Have we exhausted this path?
-        if (row, col) in steps or (left and right):
+        if (row, col) == start and loop != 0:
+            return num_steps
+        if (row, col, loop) in seen or abs(loop) >= 2:
             continue
-        steps[row, col] = num_steps
+        seen.add((row, col, loop))
 
-        # Add the next steps to the queue
         for nr, nc in [(row - 1, col), (row, col - 1), (row, col + 1), (row + 1, col)]:
-            npos = nr, nc
-            if npos in grid:
-                heapq.heappush(
-                    queue,
-                    (
-                        num_steps + grid[npos],
-                        npos,
-                        left or (nr > 0 and nc < 0),
-                        right or (nr > 0 and nc > 0),
-                    ),
-                )
-
-    return best_loop if best_loop <= max_steps else 0
+            if (npos := (nr, nc)) not in grid:
+                continue
+            nloop = loop + (nr > 0) * ray.get((col, nc), 0)
+            if (nr, nc, nloop) not in seen:
+                heapq.heappush(queue, (num_steps + grid[npos], npos, nloop))
+    return 0
