@@ -2,7 +2,7 @@
 
 My solutions to the excellent puzzles at [everybody.codes](http://everybody.codes/) in different languages:
 
-- 🐍 Python: 119 🦆
+- 🐍 Python: 128 🦆
 - 💧 Elixir: 3 🦆
 
 All solutions:
@@ -26,6 +26,6 @@ All solutions:
 | 15 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/15_from-the-herbalists-diary) | [🐍](python/src/2025_the-song-of-ducks-and-dragons/15_definitely-not-a-maze) |
 | 16 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/16_cat-grin-of-fortune) | [🐍](python/src/2025_the-song-of-ducks-and-dragons/16_harmonics-of-stone) |
 | 17 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/17_galactic-geometry) | [🐍](python/src/2025_the-song-of-ducks-and-dragons/17_deadline-driven-development) |
-| 18 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/18_the-ring) |  |
-| 19 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/19_encrypted-duck) |  |
-| 20 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/20_gliding-finale) |  |
+| 18 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/18_the-ring) | [🐍](python/src/2025_the-song-of-ducks-and-dragons/18_when-roots-remember) |
+| 19 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/19_encrypted-duck) | [🐍](python/src/2025_the-song-of-ducks-and-dragons/19_flappy-quack) |
+| 20 |  | [🐍](python/src/2024_the-kingdom-of-algorithmia/20_gliding-finale) | [🐍](python/src/2025_the-song-of-ducks-and-dragons/20_dream-in-triangles) |

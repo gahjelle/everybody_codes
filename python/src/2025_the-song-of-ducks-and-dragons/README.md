@@ -15,9 +15,12 @@ Solutions to [everybody.codes 2025](http://everybody.codes/) in Python:
 | 9 | Encoded In The Scales | ⚪️ 930.33 μs | 🔵 33.16 ms | 🔴 3.11 s |
 | 10 | Feast On The Board | ⚪️ 890.96 μs | 🔵 35.53 ms | 🔵 844.38 ms |
 | 11 | The Scout Duck Protocol | ⚪️ 72.56 μs | 🔴 1.45 s | ⚪️ 615.91 μs |
-| 12 | One Spark To Burn Them All | ⚪️ 554.56 μs | 🔵 14.80 ms | 🔴 18.03 s |
+| 12 | One Spark To Burn Them All | ⚪️ 564.19 μs | 🔵 13.62 ms | 🔴 3.59 s |
 | 13 | Unlocking The Mountain | ⚪️ 28.19 μs | ⚪️ 163.57 μs | 🔵 2.23 ms |
 | 14 | The Game Of Light | 🔵 5.42 ms | 🔵 801.79 ms | 🔴 2.21 s |
 | 15 | Definitely Not A Maze | 🔵 11.53 ms | 🔵 66.78 ms | 🔵 116.33 ms |
 | 16 | Harmonics Of Stone | ⚪️ 35.39 μs | 🔵 3.05 ms | 🔵 8.04 ms |
 | 17 | Deadline Driven Development | 🔵 1.75 ms | 🔵 14.81 ms | 🔴 1.57 s |
+| 18 | When Roots Remember | 🔵 4.40 ms | 🔵 34.74 ms | 🔵 802.22 ms |
+| 19 | Flappy Quack | ⚪️ 113.68 μs | 🔵 1.10 ms | 🔵 77.66 ms |
+| 20 | Dream In Triangles | 🔵 1.45 ms | 🔵 19.78 ms | 🔵 10.62 ms |
