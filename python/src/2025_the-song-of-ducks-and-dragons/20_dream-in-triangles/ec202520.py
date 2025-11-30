@@ -5,52 +5,46 @@ from typing import TypeAlias
 
 Coordinate: TypeAlias = tuple[int, int]
 Grid: TypeAlias = dict[Coordinate, str]
+Triangles: TypeAlias = set[Coordinate]
 
 
-def parse_maze(puzzle_input: str) -> Grid:
+def parse_maze(puzzle_input: str) -> tuple[Triangles, Coordinate, Coordinate, int]:
     """Parse the triangular maze."""
-    return {
+    grid = {
         (row, col): char
         for row, line in enumerate(puzzle_input.splitlines())
         for col, char in enumerate(line)
         if char != "."
     }
+    triangles = {pos for pos, char in grid.items() if char in "TSE"}
+    start = next((pos for pos, char in grid.items() if char == "S"), (0, 0))
+    end = next((pos for pos, char in grid.items() if char == "E"), (0, 0))
+    size = max(c for _, c in grid)
+    return triangles, start, end, size
 
 
 def part1(puzzle_input: str) -> int:
     """Solve part 1."""
-    maze = parse_maze(puzzle_input)
-    triangles = {pos for pos, char in maze.items() if char == "T"}
-
-    pairs = set()
-    for triangle in triangles:
-        for nbh in neighbours(triangle):
-            if nbh in triangles:
-                pairs.add(tuple(sorted([triangle, nbh])))
-    return len(pairs)
+    triangles, _, _, _ = parse_maze(puzzle_input)
+    pairs = {
+        (triangle, nbh)
+        for triangle in triangles
+        for nbh in neighbours(triangle)
+        if nbh in triangles
+    }
+    return len(pairs) // 2  # Pairs are double counted
 
 
 def part2(puzzle_input: str) -> int:
     """Solve part 2."""
-    maze = parse_maze(puzzle_input)
-    triangles = {pos for pos, char in maze.items() if char in "TSE"}
-    start = next(pos for pos, char in maze.items() if char == "S")
-    end = next(pos for pos, char in maze.items() if char == "E")
+    triangles, start, end, _ = parse_maze(puzzle_input)
     return find_path([triangles], start, end)
 
 
 def part3(puzzle_input: str) -> int:
     """Solve part 3."""
-    maze = parse_maze(puzzle_input)
-    triangles = {pos for pos, char in maze.items() if char in "TSE"}
-    start = next(pos for pos, char in maze.items() if char == "S")
-    end = next(pos for pos, char in maze.items() if char == "E")
-    max_col = max(c for _, c in maze)
-    grids = [
-        triangles,
-        rotate(triangles, max_col),
-        rotate(rotate(triangles, max_col), max_col),
-    ]
+    triangles, start, end, size = parse_maze(puzzle_input)
+    grids = [triangles, rotate(triangles, size), rotate(rotate(triangles, size), size)]
     return find_path(grids, start, end)
 
 
@@ -61,27 +55,24 @@ def neighbours(pos: Coordinate) -> list[Coordinate]:
     return [(row, col - 1), (row, col + 1), (row + updown, col)]
 
 
-def rotate(grid: set[Coordinate], max_col: int) -> set[Coordinate]:
+def rotate(grid: set[Coordinate], size: int) -> set[Coordinate]:
     """Rotate the grid 120 degrees.
 
     12345    97621    54879    12345
     .678.    .843.    .326.    .678.
     ..9..    ..5..    ..1..    ..9..
 
-    0, 0  ->  0,  0  ->  0, 4
-    0, 1      0, -1      0, 3
-    0, 2      1, -1      1, 3
-    0, 3      1, -2      1, 2
-    0, 4      2, -2      2, 2
-    1, 1      0, -2      0, 2
-    1, 2      0, -3      0, 1
-    1, 3      1, -3      1, 1
-    2, 2      0, -4      0, 0
+    0, 0                       0,  0                          0, 4
+    0, 1                       0, -1                          0, 3
+    0, 2  Rotate around (0,0)  1, -1    Translate by size     1, 3
+    0, 3                       1, -2                          1, 2
+    0, 4                       2, -2                          2, 2
+    1, 1         ->            0, -2            ->            0, 2
+    1, 2                       0, -3                          0, 1
+    1, 3                       1, -3                          1, 1
+    2, 2                       0, -4                          0, 0
     """
-    return {
-        ((col - row) // 2, max_col + (col - row) // 2 - (row + col))
-        for row, col in grid
-    }
+    return {(nrow := (col - row) // 2, size + nrow - (row + col)) for row, col in grid}
 
 
 def find_path(grids: list[set[Coordinate]], start: Coordinate, end: Coordinate) -> int:

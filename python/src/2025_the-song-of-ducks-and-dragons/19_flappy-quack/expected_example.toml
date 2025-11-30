@@ -4,7 +4,7 @@ code = "ec202519.py"
 input_path = "example1_p1.txt"
 value = 24
 solved = true
-duration = 8.610700024291873e-05
+duration = 8.291800622828305e-05
 
 [part1-example2_p1]
 interpreter = "pypy311"
@@ -12,7 +12,7 @@ code = "ec202519.py"
 input_path = "example2_p1.txt"
 value = 11
 solved = true
-duration = 0.0001552800094941631
+duration = 0.0001284809986827895
 
 [part2-example1_p2]
 interpreter = "pypy311"
@@ -20,4 +20,12 @@ code = "ec202519.py"
 input_path = "example1_p2.txt"
 value = 22
 solved = true
-duration = 0.00011704000644385815
+duration = 0.00013965800462756306
+
+[part3-example1_p3]
+interpreter = "pypy311"
+code = "ec202519.py"
+input_path = "example1_p3.txt"
+value = 100
+solved = true
+duration = 0.00010375300189480186

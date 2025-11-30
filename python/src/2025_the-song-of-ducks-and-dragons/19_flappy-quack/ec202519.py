@@ -2,9 +2,11 @@
 
 import collections
 import heapq
+import itertools
 from typing import TypeAlias
 
 Walls: TypeAlias = dict[int, set[int]]
+Cache: TypeAlias = dict[int, set[int]]
 
 
 def parse_walls(puzzle_input: str) -> Walls:
@@ -29,8 +31,9 @@ def part(puzzle_input: str) -> int:
     second to last wall and calculate flaps from there.
     """
     walls = parse_walls(puzzle_input)
-    last_two_walls = dict(sorted(walls.items())[-2:])
-    return find_flaps(last_two_walls, target=max(walls))
+    last_wall = max(walls)
+    min_height = min(find_heights(walls))
+    return find_flaps(last_wall, min_height)
 
 
 part1 = part
@@ -38,27 +41,20 @@ part2 = part
 part3 = part
 
 
-def find_flaps(walls: Walls, target: int) -> int:
-    """Find the minimum number of flaps necessary to pass all walls."""
-    queue = [(0, 0, 0)]
-    seen = set()
-    while queue:
-        x, flaps, y = heapq.heappop(queue)
-        if x in walls and y not in walls[x]:
-            continue
-        if x == target:
-            return flaps
-        if (x, y) in seen:
-            continue
-        seen.add((x, y))
+def find_flaps(x: int, height: int) -> int:
+    """Find the number of flaps necessary to come to the given position."""
+    return (x + height) // 2
 
-        next_x = min(wx for wx in walls if wx > x)
-        next_ys = walls[next_x]
+
+def find_heights(walls: Walls) -> set[int]:
+    """Find the possible heights at the final wall."""
+    heights = {0}
+    for x, next_x in itertools.pairwise([0, *walls]):
         dx = next_x - x
-        for ny in next_ys:
-            if abs(ny - y) > dx:
-                continue
-            nflaps = flaps + dx - (dx - (ny - y)) // 2
-            heapq.heappush(queue, (next_x, nflaps, ny))
-
-    return 0
+        heights = {
+            height
+            for height in walls[next_x]
+            if any(height - dx <= h <= height + dx for h in heights)
+        }
+        # print(next_x, heights)
+    return heights

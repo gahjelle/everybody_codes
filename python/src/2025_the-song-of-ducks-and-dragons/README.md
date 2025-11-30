@@ -22,5 +22,5 @@ Solutions to [everybody.codes 2025](http://everybody.codes/) in Python:
 | 16 | Harmonics Of Stone | ⚪️ 35.39 μs | 🔵 3.05 ms | 🔵 8.04 ms |
 | 17 | Deadline Driven Development | 🔵 1.75 ms | 🔵 14.81 ms | 🔴 1.57 s |
 | 18 | When Roots Remember | 🔵 4.40 ms | 🔵 34.74 ms | 🔵 802.22 ms |
-| 19 | Flappy Quack | ⚪️ 113.68 μs | 🔵 1.10 ms | 🔵 77.66 ms |
+| 19 | Flappy Quack | ⚪️ 147.38 μs | 🔵 5.45 ms | 🔵 735.12 ms |
 | 20 | Dream In Triangles | 🔵 1.45 ms | 🔵 19.78 ms | 🔵 10.62 ms |
